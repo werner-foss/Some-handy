@@ -1,2 +1,7 @@
 <h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+
+<p>Call me to <%= number_to_phone "0669274404" %></p>
+
+<p>That will cost you <%= number_to_currency(25, unit: :₴) %> per minute</p>
+
+<p>There is <%= number_to_percentage(25, precision: 0) %> possibility I will answer you</p>
