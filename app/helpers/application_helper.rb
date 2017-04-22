@@ -15,4 +15,8 @@ module ApplicationHelper
   content_tag(:p, greeting, class: "source_greating")
    end
   end
+  
+  def copyright_generator
+   WernerViewTool::Renderer.copyright 'Dmytro Iefymenko', 'All rights reserved'
+  end
 end
