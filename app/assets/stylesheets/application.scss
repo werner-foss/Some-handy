@@ -172,9 +172,18 @@ body {
   color: black;
   float: right;
 }
+.left-links a {
+  color: black;
+  float: left;
+}
 .g-map {
   float: right;
 }
 .contact-info {
   float: left;
+}
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
 }
