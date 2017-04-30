@@ -1,0 +1,15 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">My portfolio</h1>
+    <p class="lead text-muted">Some stuff I've created</p>
+    <p>
+      <%= link_to "Portfolios based on Angular", angular_item_path, class: "btn btn-secondary" %>
+      <%= link_to "Portfolios based on Ruby on Rails", rails_item_path, class: "btn btn-secondary" %>
+    </p>
+    <p>
+      <% if logged_in?(:site_admin) %>
+      <%= link_to "Create New Item", new_portfolio_path, class: "btn btn-primary"%>
+      <% end %>
+    </p>
+  </div>
+</section>

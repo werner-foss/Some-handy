@@ -1,6 +1,7 @@
-<h1>Portfolio Items</h1>
-<%= link_to "Create New Item", new_portfolio_path if logged_in?(:site_admin)%>
-<%= link_to "Portfolios based on Angular", angular_item_path %>
-<%= link_to "Portfolios based on Ruby on Rails", rails_item_path %>
-
-<%=render partial: 'portfolio_item', collection: @portfolio_item %>
+<div class="album text-muted">
+  <div class="container">
+      <div class="row">
+        <%=render partial: 'portfolio_item', collection: @portfolio_item %>
+      </div>
+  </div>  
+</div>
