@@ -3,7 +3,7 @@
       <h1 class="blog-title">My Blog</h1>
       <p class="lead blog-description">personalized blog that describes something.</p>
       <%  if logged_in?(:site_admin)%>
-        <button type="button" class="btn btn-secondary"><%= link_to 'New Blog', new_blog_path %></button>
+        <button type="button" class="btn btn-secondary"><%= link_to 'Write a new Blog', new_blog_path %></button>
       <% end %>
     </div>
 </div>
