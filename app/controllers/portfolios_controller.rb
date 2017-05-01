@@ -3,15 +3,15 @@ class PortfoliosController < ApplicationController
   layout "portfolio"
   access all: [:show, :index, :angular, :rails], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
   def index
-    @portfolio_item = Portfolio.all
+    @portfolio_item = Portfolio.page(params[:page]).per(9)
   end
   
   def angular
-    @angular_portfolio_item = Portfolio.angular_portfolio
+    @angular_portfolio_item = Portfolio.angular_portfolio.page(params[:page]).per(9)
   end
   
   def rails
-    @rails_portfolio_item = Portfolio.rails_portfolio
+    @rails_portfolio_item = Portfolio.rails_portfolio.page(params[:page]).per(9)
   end
   
   def new
