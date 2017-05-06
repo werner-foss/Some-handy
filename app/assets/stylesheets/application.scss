@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -179,8 +179,10 @@ body {
 .g-map {
   float: right;
 }
-.contact-info {
+.contact-info > .card {
   float: left;
+  background-color: black;
+  padding: 20px;
 }
 .login > .card {
   width: 22rem;
@@ -208,9 +210,16 @@ body {
 .app-footer {
   color: white;
 }
-
-
-
-
-
+.esl-news {
+  margin: 20px;
+}
+.esl-news a{
+  color: green;
+}
+.esl-news > .card {
+  border: 1px solid white;
+  background-color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
