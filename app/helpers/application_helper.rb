@@ -27,6 +27,7 @@ module ApplicationHelper
     {url: contact_path, title: 'Contact'},
     {url: blogs_path, title: 'Blogs'},
     {url: portfolios_path, title: 'Portfolios'},
+    {url: esl_news_path, title: 'ESL news'},
     ]
   end
   
