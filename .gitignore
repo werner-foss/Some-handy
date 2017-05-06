@@ -18,3 +18,4 @@
 
 # Hiding secrets file
 /config/secrets.yml
+/.env
