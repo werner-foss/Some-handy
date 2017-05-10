@@ -4,11 +4,11 @@
     <button type="button" class="btn btn-secondary"><%= link_to 'Edit', edit_blog_path(@blog) %></button>
    <% end %>
   <p><%= @blog.body %> </p>
-  
+  <%= render 'comments/comment_form'%>
   <div id="comments" data-blog-id="<%= @blog.id %>">
    <%= render @blog.comments %>
   </div>
   
-  <%= render 'comments/comment_form'%>
+  
   
 </div>
