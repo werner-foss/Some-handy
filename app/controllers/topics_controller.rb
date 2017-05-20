@@ -1,4 +1,6 @@
 class TopicsController < ApplicationController
+ include SetSidebarTopics
+ before_action :set_sidebar_topics
  layout 'blog'
  
   def index
