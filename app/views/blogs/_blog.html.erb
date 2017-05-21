@@ -1,13 +1,15 @@
 <div class="blog-post">
    <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
-   <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now)%> ago</p>
-   <% if logged_in?(:site_admin)%>
-     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary"><%= link_to blog.status, toggle_status_blog_path(blog)%></button>
-        <button type="button" class="btn btn-secondary"><%= link_to 'Edit', edit_blog_path(blog)%></button>
-        <button type="button" class="btn btn-secondary"><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }%></button>
-      </div>
-   <% end %>
    
+   <nav class="breadcrumb">
+   <%= link_to blog.topic.title, topic_path(blog.topic), class: 'breadcrumb-item'%>
+   <span class="breadcrumb-item active">Published <%= distance_of_time_in_words(blog.created_at, Time.now)%> ago</span>
+   <span class="pull-right">
+     <%= link_to blog.status, toggle_status_blog_path(blog) if logged_in?(:site_admin)%>
+     <%= link_to fa_icon('pencil-square-o'), edit_blog_path(blog) if logged_in?(:site_admin)%>
+     <%= link_to fa_icon('trash-o'), blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)%>
+   </span>
+  </nav>
+  
    <p><%= markdown blog.body %></p>
 </div>
