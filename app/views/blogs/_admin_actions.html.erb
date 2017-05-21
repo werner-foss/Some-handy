@@ -1,0 +1,7 @@
+<% if logged_in?(:site_admin) %>
+<span class="pull-right">
+     <%= link_to blog.status, toggle_status_blog_path(blog),class: "btn btn-info btn-sm" %>
+     <%= link_to fa_icon('pencil-square-o'), edit_blog_path(blog), class: "btn btn-warning btn-sm"%>
+     <%= link_to fa_icon('trash-o'), blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm"%>
+</span>
+<% end %>
