@@ -4,6 +4,23 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "Profile photo", class: "profile-image"%>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class= "skill">
+              <h5><%= skill.title %></h5>
+              <div class="progress">
+                <div 
+                   class="progress-bar progress-bar-striped progress-bar-animated"
+                   role="progressbar"
+                   aria-valuenow="<%= skill.precent_utilized %>"
+                   aria-valuemin="0"
+                   aria-valuemax="100"
+                   style="width: <%= skill.precent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
         <div class="col-md-8">
           <h3>Education</h3>
@@ -12,7 +29,7 @@
           <p>Major: philologist, teacher of the Germanic studies</p>
           <p>
             <button
-              class="btn btn-info"
+              class="btn btn-primary"
               type="button"
               data-toggle="collapse"
               data-target="#jobHistory"
@@ -45,4 +62,4 @@
     </div>
   </div>
 </div>
-<%= render "shared/application_footer" %>
+<%= render "shared/application_footer"%>
