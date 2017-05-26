@@ -178,11 +178,8 @@ body {
 }
 .g-map {
   float: right;
-}
-.contact-info > .card {
-  float: left;
-  background-color: black;
-  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 .login > .card {
   width: 22rem;
@@ -222,10 +219,17 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-.about-me {
+.app-card-container {
   color: black;
   text-align: left;
 }
-.about-me  h3 {
-  text-align: center;
+.app-card-container > .card {
+  padding: 30px;
+}
+.profile-image {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.app-card-container a {
+  color: black;
 }

@@ -1,24 +1,22 @@
-<h1 class="cover-heading">About me</h1>
-<br>
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "profile.jpg", width: 300, alt: "Profile photo", class: "rounded"%>
-  </div>
-    <div class="col-md-8">
-      <div class="card">
-        <div class= "about-me">
+<div class= "app-card-container">
+  <div class= "card">
+        <h1 class="cover-heading">About me</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profile.jpg", width: 300, alt: "Profile photo", class: "profile-image"%>
+      </div>
+        <div class="col-md-8">
           <h3>Education</h3>
           <p>Luhansk National University , Luhansk, Ukraine., Master degree in Philological and Pedagogical Science, Luhansk.
           <br> Major: philologist, teacher of the Germanic studies</p>
-          
           <h3>Additional education/ training</h3>
           <p>TEFL on-line course (120 hours.)</p>
           <p>BETT on-line course (50 hours.)</p>
           <p>Monticello , State New - York, USA. (Summer students’ volunteer program)</p>
           <p>Dachau, federal land Bavaria,Germany. (Educational program dedicated to Holocaust.)</p> 
-          <p>Consulting practice for the group of companies. - Slovak republic, Trenchin. (June-November 2015)</p>
+          <p>Consulting practice for the group of companies. - Slovak republic, Trenchin.</p>
         </div>
-      </div>
     </div>
+  </div>
 </div>
 <%= render "shared/application_footer" %>
