@@ -1,19 +1,24 @@
-<div class="contact-info">
-    <div class="card">
-      <h1 class="cover-heading">Contacts</h1><br>
-      <p class="lead"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i> : <%= number_to_phone "0669274404" %></p>
-      <p class="lead"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> : <a href = "mailto:wernerfosspilot@gmail.com?subject=PortfolioContact""email me">wernerfosspilot@gmail.com</a></p>
+<div class= "app-card-container">
+  <div class= "card">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="cover-heading">Contacts</h1><br>
+        <p class="lead"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i> : <%= number_to_phone "0669274404" %></p>
+        <p class="lead"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> : <a href = "mailto:wernerfosspilot@gmail.com?subject=PortfolioContact""email me">wernerfosspilot@gmail.com</a></p>
+      </div>
+        <div class="col-md-6">
+          <div class="g-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659.
+                       803781126515!2d37.99874659466495!3d48.58657968604703!2m3!1
+                       f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dfe63bf6d
+                       15f11%3A0xe1419e40f7dbead1!2z0LLRg9C70LjRhtGPINCS0LDRgdC40
+                       LvRjyDQn9C10YDRiNC40L3QsCwgMjAsINCR0LDRhdC80YPRgiwg0JTQvtC
+                       90LXRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgODQ1MDE!5e0!3m2!1sru!
+                       2sua!4v1493216588441" width="550" height="350" 
+                       frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
     </div>
-</div>
-
-<div class="g-map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659.
-             803781126515!2d37.99874659466495!3d48.58657968604703!2m3!1
-             f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dfe63bf6d
-             15f11%3A0xe1419e40f7dbead1!2z0LLRg9C70LjRhtGPINCS0LDRgdC40
-             LvRjyDQn9C10YDRiNC40L3QsCwgMjAsINCR0LDRhdC80YPRgiwg0JTQvtC
-             90LXRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgODQ1MDE!5e0!3m2!1sru!
-             2sua!4v1493216588441" width="450" height="450" 
-             frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
 </div>
 <%= render "shared/application_footer" %>

@@ -1,6 +1,14 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
+@font-face {
+  font-family: 'Lato';
+  src: font-url('Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  src: font-url('RobotoSlab-Regular.ttf');
+}
 /*
  * Globals
  */
@@ -30,13 +38,21 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
-
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -178,11 +194,8 @@ body {
 }
 .g-map {
   float: right;
-}
-.contact-info > .card {
-  float: left;
-  background-color: black;
-  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 .login > .card {
   width: 22rem;
@@ -222,10 +235,28 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-.about-me {
+.app-card-container {
   color: black;
   text-align: left;
 }
-.about-me  h3 {
-  text-align: center;
+.app-card-container > .card {
+  padding: 30px;
+}
+.profile-image {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.app-card-container a {
+  color: black;
+}
+.card-about {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.skill {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

@@ -2,8 +2,11 @@
     <div class="container">
       <h1 class="blog-title">My Blog</h1>
       <p class="lead blog-description">personalized blog that describes something.</p>
-      <%  if logged_in?(:site_admin)%>
-        <button type="button" class="btn btn-secondary"><%= link_to 'Write a new Blog', new_blog_path %></button>
-      <% end %>
+      <span>
+        <%  if logged_in?(:site_admin)%>
+         <button type="button" class="btn btn-secondary"><%= link_to 'Write a new Blog', new_blog_path %></button>
+         <% end %> 
+      </span>
+      <span> <button type="button" class="btn btn-secondary"><%= link_to "Topics", topics_path %></button></span>
     </div>
 </div>
