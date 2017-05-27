@@ -1,3 +1,20 @@
+User.create!(
+  email: "wernerfosspilot@gmail.com",
+  password: "123456",
+  password_confirmation: "123456",
+  name: "Admin User",
+  roles: "site_admin"
+  )
+puts "1 Admin used profile was created"
+
+User.create!(
+  email: "test@test.com",
+  password: "123456",
+  password_confirmation: "123456",
+  name: "Regular User",
+  )
+puts "1 Regular used profile was created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -14,7 +31,7 @@ puts "3 topics were created"
   end
 puts "10 blog posts were created"
 
-5.times do |skill|
+3.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
     precent_utilized: 15
@@ -22,7 +39,7 @@ puts "10 blog posts were created"
   end
 puts "5 skills were created"
 
-8.times do |portfolio_item|
+4.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
     subtitle: "Ruby on Rails",
@@ -31,7 +48,7 @@ puts "5 skills were created"
     thumb_image: "https://placeholdit.imgix.net/~text?txtsize=6&txt=50%C3%9750&w=50&h=50"
     )
   end
-1.times do |portfolio_item|
+5.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
     subtitle: "Angular",
